@@ -15,6 +15,18 @@ public class Sorts{
     }
   }
 
+  public static void bubbleSort(int[] data){
+    for (int p = 0; p < data.length-1; p++){
+    for (int i = 0; i < data.length-1; i++){
+      if (data[i+1] < data[i]){
+        int swap = data[i];
+        data[i] = data[i+1];
+        data[i+1] = swap;
+      }
+    }
+  }
+  }
+
 
   public static void main(String[] args) {
     int[] ary = {190, -97, 1423, 78, 343};
@@ -22,5 +34,10 @@ public class Sorts{
     for (int i = 0; i < ary.length; i++){
       System.out.println(ary[i]);
     }
+    int[] data = {190, -97, 1423, 78, 343};
+    bubbleSort(data);
+    for (int i = 0; i < ary.length; i++){
+      System.out.println(ary[i]);
   }
+}
 }
