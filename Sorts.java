@@ -27,6 +27,14 @@ public class Sorts{
   }
   }
 
+  public static void insertionSort(int[] ary){
+    for (int i = 1; i < ary.length-1; i++){
+      if (ary[i] <= ary[i-1]){
+        
+      }
+    }
+  }
+
 
   public static void main(String[] args) {
     int[] ary = {190, -97, 1423, 78, 343};
