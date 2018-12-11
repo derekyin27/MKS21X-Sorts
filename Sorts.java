@@ -30,15 +30,17 @@ public class Sorts{
   public static void insertionSort(int[] ary){
     for (int i = 1; i < ary.length; i++){
       for (int p = i; p > 0; p--){
-        if (ary[j] < ary[j-1]){
-          int swap = ary[j];
-          ary[j] = ary[j-1];
-          ary[j-1] = swap;
+        if (ary[p] < ary[p-1]){
+          int swap = ary[p];
+          ary[p] = ary[p-1];
+          ary[p-1] = swap;
         }
       }
 
       }
     }
+
+
 
 
 
@@ -52,6 +54,11 @@ public class Sorts{
     bubbleSort(data);
     for (int i = 0; i < ary.length; i++){
       System.out.println(ary[i]);
+  }
+  int[] test = {1234, 3464, 434, -2334534, 34};
+  insertionSort(test);
+  for (int i = 0; i <test.length; i++){
+    System.out.println(test[i]);
   }
 }
 }
